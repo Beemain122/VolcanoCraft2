@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Red Line</title>
+
+    <style>
+        #line {
+            position: absolute;
+            width: 1668px;
+            height: 30px;
+            top: 250px;
+            left: 0px;
+            background-color: red;
+        }
+
+        #line2 {
+            position: absolute;
+            width: 1668px;
+            height: 30px;
+            top: 620px;
+            left: 0px;
+            background-color: red;
+        }
+        #line3 {
+            position: absolute;
+            width: 1668px;
+            height: 30px;
+            top: 980px;
+            left: 0px;
+            background-color: red;
+        }
+        #line4 {
+            position: absolute;
+            width: 1668px;
+            height: 30px;
+            top: 1330px;
+            left: 0px;
+            background-color: red;
+        }
+
+        #line5 {
+            position: absolute;
+            width: 1668px;
+            height: 30px;
+            top: 1680px;
+            left: 0px;
+            background-color: red;
+        }
+
+        #line6 {
+            position: absolute;
+            width: 1668px;
+            height: 30px;
+            top: 2030px;
+            left: 0px;
+            background-color: red;
+        }
+
+
+
+
+
+        :root {
+            --text-color: black;
+            --border-color: red;
+            --frame-bg: rgba(254,195,12,0.9);
+            --title-color: orange;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('ee2.png.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+        }
+
+        /* 🔥 ХЕДЕР */
+        header {
+            position: relative;
+            text-align: center;
+            height: 350px;
+        }
+
+        /* Уменьшили картинку */
+        header img {
+            width: 1668px;   /* уменьшили ширину */
+            height: 250px;   /* сохраняем пропорции */
+            display: block;
+            margin: 0px; /* по центру */
+        }
+
+        /* Заголовок NEWS */
+        header h1 {
+            font-size: 6em;
+            font-weight: 900;
+            color: var(--title-color);
+            -webkit-text-stroke: 2px var(--border-color);
+            text-shadow: -2px -2px 0 var(--border-color),
+            2px -2px 0 var(--border-color),
+            -2px 2px 0 var(--border-color),
+            5px 5px 0 var(--border-color);
+            position: absolute;
+            top: 10%;      /* можно двигать вверх/вниз */
+            left: 50%;     /* можно двигать влево/вправо */
+            transform: translateX(-50%);
+            margin: 0;
+        }
+
+
+
+
+        /* 🔥 РАМКИ */
+        .my-frame, .my-frame2, .my-frame3, .my-frame4, .my-frame5, .my-frame6{
+            background: var(--frame-bg);
+            border: 8px solid var(--border-color);
+            border-radius: 40px;
+            padding: 25px;
+            width: 500px;
+            height: 50px;
+            color: var(--text-color);
+
+            position: absolute;
+        }
+
+        /* Пример позиции для каждой рамки */
+        .my-frame   { top: 450px; left: 400px; }
+        .my-frame2  { top: 820px; left: 400px; }
+        .my-frame3  { top: 1180px; left: 400px; }
+        .my-frame4  { top: 1530px; left: 400px; }
+        .my-frame5  { top: 1880px; left: 400px; }
+
+
+
+
+
+        .frame-right-top {
+            position: absolute;
+            top: 300px;
+            left: 10px;
+            width: 350px;
+            height: 250px;
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 10px;
+            border: 8px solid var(--border-color);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="ttt.jpg">
+    <h1>NEWS</h1>
+</header>
+
+<div id="line"></div>
+
+<div id="line2"></div>
+
+<div id="line3"></div>
+
+<div id="line4"></div>
+
+<div id="line5"></div>
+
+<div id="line6"></div>
+
+
+<div class="my-frame">
+    <p>...</p>
+</div>
+
+<div class="my-frame2">
+    <p>...</p>
+</div>
+
+<div class="my-frame3">
+    <p>...</p>
+</div>
+
+<div class="my-frame4">
+    <p>...</p>
+</div>
+
+<div class="my-frame5">
+    <p>...</p>
+</div>
+
+
+<div class="frame-right-top">
+    <div class="content">
+        <img src="" alt="Фото 1">
+    </div>
+</div>
+
+<div class="frame-right-top" style="top: 670px; left: 10px;">
+    <div class="content">
+        <img src="" alt="Фото 2">
+    </div>
+
+    <div class="frame-right-top" style="top: 350px; left: -5px;">
+        <div class="content">
+            <img src="" alt="Фото 3">
+        </div>
+
+        <div class="frame-right-top" style="top: 340px; left: -5px;">
+            <div class="content">
+                <img src="" alt="Фото 4">
+            </div>
+
+            <div class="frame-right-top" style="top: 340px; left: -5px;">
+                <div class="content">
+                    <img src="" alt="Фото 5">
+                </div>
+
+
+</div>
+
+
+
+</body>
+</html>

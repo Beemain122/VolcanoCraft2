@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        header h1 {
+            font-size: 6em;
+            font-weight: 900;
+            color: var(--title-color);
+            -webkit-text-stroke: 2px var(--border-color);
+            text-shadow: -2px -2px 0 var(--border-color), 2px -2px 0 var(--border-color),
+            -2px 2px 0 var(--border-color), 5px 5px 0 var(--border-color);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('ee2.png.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+
+
+            body {
+                margin: 0;
+                padding: 50px;
+                background-color: black;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Общий стиль рамок */
+
+            .photo-frame {
+                position: absolute;
+                border: 6px solid rgba(255, 0, 0, 0);
+                border-radius: 20px;
+                background-color: black;
+                padding: 10px;
+                cursor: pointer;
+                transition: transform 0.2s, box-shadow 0.2s; /* плавное увеличение и тень */
+            }
+
+            .photo-frame:hover {
+                box-shadow: 0 0 20px rgba(255, 255, 255);
+                transform: scale(1.05); /* увеличиваем рамку на 5% при наведении */
+            }
+
+            .photo-frame img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+                display: block;
+            }
+
+            /* Настройки отдельных рамок */
+
+            #frame1 {
+                top: 200px;
+                left: 100px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame2 {
+                top: 200px;
+                left: 460px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame3 {
+                top: 200px;
+                left: 820px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame4 {
+                top: 200px;
+                left: 1170px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame5 {
+                top: 700px;
+                left: 100px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame6 {
+                top: 700px;
+                left: 460px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame7 {
+                top: 700px;
+                left: 820px;
+                width: 300px;
+                height: 300px;
+            }
+
+            #frame8 {
+                top: 700px;
+                left: 1170px;
+                width: 300px;
+                height: 300px;
+            }
+
+            /* Общий стиль всех текстов */
+
+            .custom-text {
+                position: absolute;
+                user-select: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            /* Настройка текстов */
+
+            #text1 {
+                top: 150px;
+                left: 160px;
+                font-size: 40px;
+            }
+
+            #text2 {
+                top: 145px;
+                left: 530px;
+                font-size: 50px;
+            }
+
+            #text3 {
+                top: 145px;
+                left: 880px;
+                font-size: 50px;
+            }
+
+            #text4 {
+                top: 145px;
+                left: 1210px;
+                font-size: 50px;
+            }
+
+            #text5 {
+                top: 645px;
+                left: 130px;
+                font-size: 50px;
+            }
+
+            #text6 {
+                top: 645px;
+                left: 530px;
+                font-size: 50px;
+            }
+
+            #text7 {
+                top: 645px;
+                left: 890px;
+                font-size: 50px;
+            }
+
+            #text8 {
+                top: 645px;
+                left: 1230px;
+                font-size: 50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- Рамки -->
+<div class="photo-frame" id="frame1" onclick="openHDMI('Werelite.html')">
+    <img src="photo4.jpg" alt="Фото 1">
+</div>
+<div class="photo-frame" id="frame2" onclick="openHDMI('Hacker.html')">
+    <img src="photo5.jpg" alt="Фото 2">
+</div>
+<div class="photo-frame" id="frame3" onclick="openHDMI('Vampire.html')">
+    <img src="photo3.jpg" alt="Фото 3">
+</div>
+<div class="photo-frame" id="frame4" onclick="openHDMI('Firelord.html')">
+    <img src="photo6.jpg" alt="Фото 4">
+</div>
+<div class="photo-frame" id="frame5" onclick="openHDMI('EvilLord.html')">
+    <img src="photo7.jpg" alt="Фото 5">
+</div>
+<div class="photo-frame" id="frame6" onclick="openHDMI('Dragon.html')">
+    <img src="photo8.jpg" alt="Фото 6">
+</div>
+<div class="photo-frame" id="frame7" onclick="openHDMI('Phenix.html')">
+    <img src="photo9.jpg" alt="Фото 7">
+</div>
+<div class="photo-frame" id="frame8" onclick="openHDMI('Lucifer.html')">
+    <img src="photo10.jpg" alt="Фото 8">
+</div>
+
+<style>
+    /* Мини-рамка для текста */
+    .text-frame {
+        font-size: 50px;            /* размер текста */
+        font-weight: 900;           /* жирный текст */
+        color: black;                 /* цвет текста */
+        -webkit-text-stroke: 2px red; /* обводка текста */
+        text-shadow: -2px -2px 0 red, 2px -2px 0 red,
+        -2px 2px 0 red, 2px 2px 0 red; /* тень для объёма */
+        position: absolute;
+        user-select: none;          /* нельзя выделять */
+    }
+
+    /* Если нужно, можно добавить плавное увеличение при наведении */
+    .text-frame:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+    }
+</style>
+
+<!-- Пример использования для ваших 8 текстов -->
+<div class="text-frame" id="text1" style="top:150px; left:160px;">WERELITE</div>
+<div class="text-frame" id="text2" style="top:145px; left:530px;">HACKER</div>
+<div class="text-frame" id="text3" style="top:145px; left:880px;">VAMPIRE</div>
+<div class="text-frame" id="text4" style="top:145px; left:1210px;">FIRELORD</div>
+<div class="text-frame" id="text5" style="top:645px; left:130px;">EVILELORD</div>
+<div class="text-frame" id="text6" style="top:645px; left:530px;">DRAGON</div>
+<div class="text-frame" id="text7" style="top:645px; left:890px;">PHENIX</div>
+<div class="text-frame" id="text8" style="top:645px; left:1230px;">LUCIFER</div>
+
+
+<script>
+    function openHDMI(file) {
+        window.open(file, "_blank"); // открывает отдельный .html файл
+    }
+</script>
+
+</body>
+</html>

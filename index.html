@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>VOLCANOCRAFT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --text-color: 0, 0, 79;
+            --border-color: red;
+            --frame-bg: rgba(254,195,12,0.9);
+            --title-color: orange;
+            --button-bg: rgba(254,195,12,0.9);
+            --button-hover-bg: rgba(255,134,1,1);
+            --user-select: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('ee2.png.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        header h1 {
+            font-size: 6em;
+            font-weight: 900;
+            color: var(--title-color);
+            -webkit-text-stroke: 2px var(--border-color);
+            text-shadow: -2px -2px 0 var(--border-color), 2px -2px 0 var(--border-color),
+            -2px 2px 0 var(--border-color), 5px 5px 0 var(--border-color);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+        header p {
+            color: red;
+            font-size: 1.8em;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .frame {
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 40px;
+            overflow: auto;
+            color: var(--text-color);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .frame-left {
+            top: -100px;
+            width: 650px;
+            height: 480px;
+            border: 8px solid var(--border-color);
+            margin-top: 120px;
+            left: 405px;
+        }
+
+
+
+
+        .frame-button {
+            top: -50px;
+            left: 150px;
+            width: 500px;
+            height: 150px;
+            border-radius: 30px;
+            padding: 30px;
+            background: var(--button-bg);
+            color: var(--text-color);
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 30px;
+            position: relative;
+            border: 8px solid var(--border-color);
+        }
+
+        .frame-button:hover {
+            background: var(--button-hover-bg);
+            cursor: pointer;
+        }
+
+        .content h2, .content p {
+            margin: 1px 0;
+        }
+
+        .frame-right-top {
+            position: absolute;
+            top: 950px;
+            left: 850px;
+            width: 750px;
+            height: 487px;
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 10px;
+            border: 8px solid var(--border-color);
+        }
+
+        .frame-right-bottom {
+            position: absolute;
+            top: 1500px;
+            left: 850px;
+            width: 750px;
+            height: 485px;
+            background: var(--frame-bg);
+            border-radius: 150px;
+            padding: 10px;
+            border: 8px solid var(--border-color);
+        }
+
+        .frame-extra {
+            position: absolute;
+            top: 1550px;
+            left: 30px;
+            width: 750px;
+            height: 200px;
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 20px;
+            border: 8px solid var(--border-color);
+        }
+
+        .news-description {
+            margin-top: 100px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 { font-size: 3em; }
+            header p { font-size: 1.2em; }
+
+            .frame-left, .frame-news, .frame-right-top, .frame-right-bottom, .frame-extra {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            .news-description { margin-top: 20px; }
+
+            .frame-button {
+                width: 90%;
+                height: auto;
+                margin: 20px auto;
+            }
+
+            .frame-right-top, .frame-right-bottom, .frame-extra {
+                position: relative;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="ttt.jpg">
+    <h1>VOLCANOCRAFT</h1>
+    <p>Добро пожаловать на сайт сервера!</p>
+</header>
+
+<div class="frame frame-left">
+    <div class="content">
+        <h1>Описание сервера VolcanoCraft</h1>
+        <p>
+            VolcanoCraft это мир майнкрафт, что полон аномально страшными погодными условиями, землёй для выживания, что смахивает больше на адскую, и полный вагон приключений и интересных воспоминаний у вас в кармане после захода на него.
+        </p>
+        <p>
+            Ивенты не дают вам заскучать, а все игроки сервера автоматически становятся их участниками! 😜👍
+        </p>
+
+        <h1>Заходи и играй через телефон и ПК! 💥</h1>
+        <ul><p><li>Айпи для ПК:</li></p></ul>
+        <ul><p><li>Версия: 1.16.5+</li></p></ul>
+        <ul><p><li>Для телефона:</li></p></ul>
+        <ul><p><li>Айпи:</li></p></ul>
+        <ul><p><li>Порт:</li></p></ul>
+        <ul><p><li>Версия:</li></p></ul>
+    </div>
+</div>
+
+<a href="news.html" target="_blank" class="frame-button" style="left: 30px; top:-90px;width: 730px; height: 200px;">
+    <div class="content">
+        <h1>О новостном канале:</h1>
+        <p>Так же у нас существует новостной сайт, где публикуются все новости что происходят на вулкане.
+            Такие как: Жизнь игроков, гриферство, о победителей в ивентах/квестах и многом другом!✨💫
+            Переходите сюда (ссылка) чтоб быть всегда в курсе последних новостей на вулкане!📰😱</p>
+        <p><h4>Нажмите здесь, чтобы открыть страницу с правилами</h4></p>
+    </div>
+</a>
+
+<!-- 🔴 Рабочая кнопка -->
+<a href="pravela.html" target="_blank" class="frame-button" style="left: 100px; top:-90px;">
+    <div class="content">
+        <h1>Правила сервера</h1>
+        <p><h4>Нажмите здесь, чтобы открыть страницу с правилами</h4></p>
+    </div>
+</a>
+
+<a href="main.html" target="_blank" class="frame-button" style="left: 100px; top: 180px;">
+    <div class="content">
+        <h1>Привелегии</h1>
+        <p><h4>Нажмите здесь, чтобы открыть страницу привелегий</h4></p>
+    </div>
+</a>
+
+
+<div class="frame frame-right-top">
+    <div class="content">
+        <img src="photo1.jpg" alt="Фото 1" class="photo-frame">
+    </div>
+</div>
+
+<div class="frame frame-right-bottom">
+    <div class="content">
+        <img src="photo2.png" alt="Фото 2" class="photo-frame">
+    </div>
+</div>
+
+<div class="frame frame-extra" style="left: 20px; top: 1530px;">
+    <div class="content">
+        <h1>Ивенты:</h1>
+        <p>Ивенты могут быть разными как и призы, от топовых ресурсов от самого дъявола до промокодов для ВЫСОКОЙ скидки при покупки ЛЮБОГО доната!
+            Но какими бы не были призы, остаётся только лишь одно тем же, это то, что все ивенты интересные и не заставляют долго скучать)😉
+            Заходи, участвуй и побеждай!🥳⚔️</p>
+    </div>
+</div>
+
+</body>
+</html>
